@@ -20,7 +20,7 @@ class String
   end
  # conv = Iconv.new("BIG5//TRANSLIT//IGNORE", "UTF8")
   # will big5 conversions fail without the options?
-  def zh_to_utf8(encoding = nil, encodings = nil])
+  def zh_to_utf8(encoding = nil, encodings = nil)
     encodings = ['utf-8', 'GB18030', 'GBK', 'GB2312', 'BIG5'] if encodings.nil?
     encodings = encoding + encodings unless encoding.nil?
     raise 'Unable to Convert' if encodings.size == 0
