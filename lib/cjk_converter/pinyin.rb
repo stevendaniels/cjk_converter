@@ -111,7 +111,7 @@ module CJKConverter
 "io3" => "iǒ",
 "io4" => "iò",
 "io5" => "io",
-"iu1" => "diū",
+"iu1" => "iū",
 "iu2" => "diú",
 "iu3" => "diǔ",
 "iu4" => "diù",
