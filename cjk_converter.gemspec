@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Steven Daniels"]
   s.email       = ["stevendaniels88@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{A CJK romanization converter for CJK languages.}
+  s.description = %q{A CJK (Chinese, Japanese, and Korean) romanization converter for CJK languages.}
 
   s.rubyforge_project = "cjk_converter"
 
