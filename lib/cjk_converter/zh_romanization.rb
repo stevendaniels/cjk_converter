@@ -1,3 +1,4 @@
+# encoding: utf-8
 module CJKConverter
   class ZhRomanization
     def convert(str, to, from = nil)
