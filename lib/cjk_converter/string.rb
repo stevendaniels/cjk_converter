@@ -28,7 +28,7 @@ class String
     begin
       text = Iconv.conv('utf-8', encodings[0], self)
     rescue
-      text = self.zh_to_utf(nil, encodings[1..-1])
+      text = self.zh_to_utf8(nil, encodings[1..-1])
     end
     text
   end
