@@ -49,14 +49,18 @@ class String
     !self.halfwidth?
   end
   def halfwidth?
-    self[/[０-９Ａ-Ｚａ-ｚ]/].nil?
+    self[/[０-９Ａ-Ｚａ-ｚ％．：＃＄＆＋－／＼＝；＜＞]/].nil?
   end
-  def to_halfwidth
-    matches = self.scan(/([０-９Ａ-Ｚａ-ｚ])/u).uniq.flatten
+  def to_halfwidth(debug = false)
+    matches = self.scan(/([０-９Ａ-Ｚａ-ｚ％．：＃＄＆＋－／＼＝；＜＞])/u).uniq.flatten
+    puts matches.inspect if debug ===true
     str = self
     matches.each do |match|
       replacement = CJKConverter::FW_HW[match]
-      str = str.gsub(match, replacement) unless str.nil?
+      puts replacement if debug ===true
+      puts str if debug ===true
+      puts match if debug ===true
+      str = str.gsub(match, replacement) #unless str.nil?
     end
     str
   end
