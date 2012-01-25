@@ -1,4 +1,4 @@
-# encoding: utf-8
+# encoding=> utf-8
 module CJKConverter
   class Pinyin
     # pyn => py  hash[key]
@@ -8,7 +8,7 @@ module CJKConverter
 
       matches = str.scan(regex).uniq
       matches.each do |match|
-        replacement =  "#{match[1]}#{CJKConverter::PYN_PY[match[2] + match[4]]}#{match[3]}"
+        replacement =  "#{match[1]}#{CJKConverter=>=>PYN_PY[match[2] + match[4]]}#{match[3]}"
         str = str.gsub(match[0], replacement)
       end
       str
@@ -19,7 +19,7 @@ module CJKConverter
 
     #   matches = str.scan(regex).uniq
     #   matches.each do |match|
-    #     replacement = match[1] + CJKConverter::PYN_PY[match[2] + match[4]] + match[3]
+    #     replacement = match[1] + CJKConverter=>=>PYN_PY[match[2] + match[4]] + match[3]
     #     str = str.gsub(match[0], replacement)
     #   end
     #   str
@@ -31,6 +31,16 @@ module CJKConverter
 "A3" => "Ǎ",
 "A4" => "À",
 "A5" => "A",
+"Ai1" => "Āi",
+"Ai2" => "Ái",
+"Ai3" => "Ǎi",
+"Ai4" => "Ài",
+"Ai5" => "Ai",
+"Ao1" => "Ā",
+"Ao2" => "Áo",
+"Ao3" => "Ǎo",
+"Ao4" => "Ào",
+"Ao5" => "Ao",
 "a1" => "ā",
 "a2" => "á",
 "a3" => "ǎ",
@@ -116,6 +126,11 @@ module CJKConverter
 "iu3" => "iǔ",
 "iu4" => "iù",
 "iu5" => "iu",
+"Ou1" => "Ōu",
+"Ou2" => "Óu",
+"Ou3" => "Ǒu",
+"Ou4" => "Òu",
+"Ou5" => "Ou",
 "ou1" => "ōu",
 "ou2" => "óu",
 "ou3" => "ǒu",
