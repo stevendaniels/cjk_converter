@@ -8,7 +8,7 @@ module CJKConverter
 
       matches = str.scan(regex).uniq
       matches.each do |match|
-        replacement =  "#{match[1]}#{CJKConverter=>=>PYN_PY[match[2] + match[4]]}#{match[3]}"
+        replacement =  "#{match[1]}#{CJKConverter::PYN_PY[match[2] + match[4]]}#{match[3]}"
         str = str.gsub(match[0], replacement)
       end
       str
