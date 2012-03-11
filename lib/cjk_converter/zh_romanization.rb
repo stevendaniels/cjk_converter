@@ -4,7 +4,7 @@ module CJKConverter
     def convert(str, to, from = nil)
       convert_to = self.set_type to
       convert_from = self.set_type from
-      puts type
+      # puts type
       tokens = str.split(' ').uniq
       replacements = tokens.collect do |t|
         # non_romanization = t.match(/[1-5](.*)/)[-1]

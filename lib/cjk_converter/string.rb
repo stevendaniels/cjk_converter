@@ -21,7 +21,8 @@ class String
   # conv = Iconv.new("BIG5//TRANSLIT//IGNORE", "UTF8")
   # will big5 conversions fail without the options?
   def zh_to_utf8(encoding = nil, encodings = nil)
-    encodings = ['utf-8', 'GB18030', 'GBK', 'GB2312', 'BIG5'] if encodings.nil?
+    #should substitute out known bad actors like space
+    encodings = ['utf-8', 'GB18030', 'BIG5', 'GBK', 'GB2312'] if encodings.nil?
     encodings = encoding + encodings unless encoding.nil?
     raise 'Unable to Convert' if encodings.size == 0
 
@@ -35,15 +36,6 @@ class String
 
   def latin?
     self.utf8_length == self.bytes.count
-  end
-  def utf8_split
-    self.scan(/./mu)
-  end
-  def utf8_length
-    self.scan(/./mu).size
-  end
-  def utf8_reverse
-    self.scan(/./mu).reverse.join
   end
   def fullwidth?
     !self.halfwidth?
