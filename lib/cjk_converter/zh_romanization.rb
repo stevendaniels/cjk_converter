@@ -458,6 +458,7 @@ module CJKConverter
 { :zyfh => "ㄗㄨㄢ", :wg => "tsuan", :mps2 => "tzuan", :yale => "dzwan", :typy => "zuan", :py => "zuan"},
 { :zyfh => "ㄗㄨㄟ", :wg => "tsui", :mps2 => "tzuei", :yale => "dzwei", :typy => "zuei", :py => "zui"},
 { :zyfh => "ㄗㄨㄣ", :wg => "tsun", :mps2 => "tzuen", :yale => "dzwen", :typy => "zun", :py => "zun"},
-{ :zyfh => "ㄗㄨㄛ", :wg => "tso", :mps2 => "tzuo", :yale => "dzwo", :typy => "zuo", :py => "zuo"}]
+{ :zyfh => "ㄗㄨㄛ", :wg => "tso", :mps2 => "tzuo", :yale => "dzwo", :typy => "zuo", :py => "zuo"},
+{ :zyfh => "ㄦ", :wg => 'rh', :mps2 => "r", :yale => "r", :typy => "r", :py => "r"}]
 end
 
