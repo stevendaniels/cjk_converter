@@ -9,10 +9,14 @@ module CJKConverter
       replacements = tokens.collect do |t|
         # non_romanization = t.match(/[1-5](.*)/)[-1]
         search = t.gsub(/[1-5].*/,'')
+        begin
         if convert_from.nil?
           replace = CJKConverter::ZH_ROMAN.find{|x| x.values.include? t.downcase.gsub(/[1-5].*/,'')}[convert_to.to_sym]
         else
           replace = CJKConverter::ZH_ROMAN.find{|x| x[convert_from.to_sym] == t.downcase.gsub(/[1-5].*/,'')}[convert_to.to_sym]
+        end
+        rescue #rescue when the converter meets something it doesn't recognize
+          replace = search
         end
       str =  str.gsub(search, replace)
       end
