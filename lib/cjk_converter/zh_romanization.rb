@@ -242,6 +242,9 @@ module CJKConverter
 { :zyfh => "ㄌㄩ", :wg => "lü", :mps2 => "liu", :yale => "lyu", :typy => "lyu", :py => "lü"},
 { :zyfh => "ㄌㄩㄝ", :wg => "lüeh", :mps2 => "liue", :yale => "lywe", :typy => "lyue", :py => "lüe"},
 { :zyfh => "ㄌㄩㄣ", :wg => "lün", :mps2 => "liun", :yale => "lyun", :typy => "lyun", :py => "lün"},
+{ :zyfh => "ㄌㄩ", :wg => "lü", :mps2 => "liu", :yale => "lyu", :typy => "lyu", :py => "lv"},
+{ :zyfh => "ㄌㄩㄝ", :wg => "lüeh", :mps2 => "liue", :yale => "lywe", :typy => "lyue", :py => "lve"},
+{ :zyfh => "ㄌㄩㄣ", :wg => "lün", :mps2 => "liun", :yale => "lyun", :typy => "lyun", :py => "lvn"},
 { :zyfh => "ㄇㄚ", :wg => "ma", :mps2 => "ma", :yale => "ma", :typy => "ma", :py => "ma"},
 { :zyfh => "ㄇㄞ", :wg => "mai", :mps2 => "mai", :yale => "mai", :typy => "mai", :py => "mai"},
 { :zyfh => "ㄇㄢ", :wg => "man", :mps2 => "man", :yale => "man", :typy => "man", :py => "man"},
@@ -285,8 +288,10 @@ module CJKConverter
 { :zyfh => "ㄋㄨㄢ", :wg => "nuan", :mps2 => "nuan", :yale => "nwan", :typy => "nuan", :py => "nuan"},
 { :zyfh => "ㄋㄨㄣ", :wg => "nun", :mps2 => "nuen", :yale => "nwen", :typy => "nun", :py => "nun"},
 { :zyfh => "ㄋㄨㄛ", :wg => "no", :mps2 => "nuo", :yale => "nwo", :typy => "nuo", :py => "nuo"},
+{ :zyfh => "ㄋㄩ", :wg => "nü", :mps2 => "niu", :yale => "nyu", :typy => "nyu", :py => "nv"},
 { :zyfh => "ㄋㄩ", :wg => "nü", :mps2 => "niu", :yale => "nyu", :typy => "nyu", :py => "nü"},
 { :zyfh => "ㄋㄩㄝ", :wg => "nüeh", :mps2 => "niue", :yale => "nywe", :typy => "nyue", :py => "nüe"},
+{ :zyfh => "ㄋㄩㄝ", :wg => "nüeh", :mps2 => "niue", :yale => "nywe", :typy => "nyue", :py => "nve"},
 { :zyfh => "ㄡ", :wg => "ou", :mps2 => "ou", :yale => "ou", :typy => "ou", :py => "ou"},
 { :zyfh => "ㄆㄚ", :wg => "p`a", :mps2 => "pa", :yale => "pa", :typy => "pa", :py => "pa"},
 { :zyfh => "ㄆㄞ", :wg => "p`ai", :mps2 => "pai", :yale => "pai", :typy => "pai", :py => "pai"},
@@ -463,6 +468,7 @@ module CJKConverter
 { :zyfh => "ㄗㄨㄟ", :wg => "tsui", :mps2 => "tzuei", :yale => "dzwei", :typy => "zuei", :py => "zui"},
 { :zyfh => "ㄗㄨㄣ", :wg => "tsun", :mps2 => "tzuen", :yale => "dzwen", :typy => "zun", :py => "zun"},
 { :zyfh => "ㄗㄨㄛ", :wg => "tso", :mps2 => "tzuo", :yale => "dzwo", :typy => "zuo", :py => "zuo"},
-{ :zyfh => "ㄦ", :wg => 'rh', :mps2 => "r", :yale => "r", :typy => "r", :py => "r"}]
+{ :zyfh => "ㄦ", :wg => 'rh', :mps2 => "r", :yale => "r", :typy => "r", :py => "r"}
+  ]
 end
 
