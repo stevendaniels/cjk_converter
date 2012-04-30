@@ -26,9 +26,9 @@ Converting Pinyin with numbered tone marks to properly formatted pinyin
 Converting between different Chinese romanization systems:
 (e.g. Zhuyin Fuhao (注音符号) -> Pinyin)
 
-  from_romanization = "pinyin"
-  to_romanization = "zhuyinfuhao"
-  pinyin = "ni3 hao3"
-  zhuyinfuhao = CJKConverter::ZhRomanization.convert(pinyin, from_romanization, to_romanization)
+    from_romanization = "pinyin"
+    to_romanization = "zhuyinfuhao"
+    pinyin = "ni3 hao3"
+    zhuyinfuhao = CJKConverter::ZhRomanization.convert(pinyin, from_romanization, to_romanization)
   
   
