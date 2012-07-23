@@ -184,6 +184,15 @@ module CJKConverter
 'm3' => 'm̌',#using combining diacritical marks
 'm4' => "m̀",
 'm5' => 'm',
-
+'n1' => 'ēn',
+'n2' => "én",
+'n3' => "ěn",
+'n4' => "èn", 
+'n5' => 'en',
+'ng1' => 'ēng',
+'ng2' => "éng",
+'ng3' => "ěng",
+'ng4' => "èng",
+'ng5' => 'eng'
 }
 end
