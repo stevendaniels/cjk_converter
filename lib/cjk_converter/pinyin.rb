@@ -24,6 +24,19 @@ module CJKConverter
     #   end
     #   str
     # end
+    def self.pinyin_to_pinyin_num(py)
+    pys = CJKConverter::PYN_PY.values.select{|x| py.include? x}
+    match = pys.sort{|x,y| x.length <=> y.length}[-1]
+    replace = CJKConverter::PYN_PY.find{|k,v| k if v == match}[0]
+
+    pyn = py.gsub(match, replace)
+
+#    if py[-1] == 'n' || py[-1] == 'g'
+      pyn = pyn.gsub(/[1-5]/,'') + pyn[/[1-5]/]
+  #    binding.pry
+ #   end
+    pyn
+    end
   end
   PYN_PY = {
 "A1" => "Ā",
@@ -165,6 +178,12 @@ module CJKConverter
 "ve2" => "üé",
 "ve3" => "üě",
 "ve4" => "üè",
-"ve5" => "üe"
+"ve5" => "üe",
+'m1' => 'm̄',#using combining diacritical marks
+'m2' => "ḿ",
+'m3' => 'm̌',#using combining diacritical marks
+'m4' => "m̀",
+'m5' => 'm',
+
 }
 end
